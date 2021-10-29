@@ -2,7 +2,7 @@
 /**
  *  Representa una dimensión
  *  
- *  @author - 
+ *  @author - Aimar Sanchez
  */
 public class Dimension  
 {

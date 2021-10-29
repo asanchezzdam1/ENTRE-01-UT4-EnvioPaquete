@@ -3,7 +3,7 @@ import java.util.Random;
  *  Un objeto de esta clase guarda los datos de un
  *  paquete
  * 
- * @author - 
+ * @author - Aimar Sanchez
  *  
  */
 public class Paquete 
