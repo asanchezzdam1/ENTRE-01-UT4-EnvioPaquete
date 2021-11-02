@@ -45,9 +45,7 @@ public class Dimension
      * Devuelve una copia exacta al objeto actual
      */
     public Dimension obtenerCopia() {
-        //TODO
-        return null;
-
+        return new Dimension(alto, ancho, largo);
     }
 
     /**
@@ -55,8 +53,14 @@ public class Dimension
      * (leer enunciado)
      */
     public String toString() {
-        //TODO
-        return null;
+        // Muestra el alto del paquete
+        String alt = String.format("%20s%10.2f%s", "El Alto es: ", alto, "cm \n");
+        // Muestra el ancho del paquete
+        String anc = String.format("%20s%10.2f%s", "El Ancho es: ", ancho, "cm \n");
+        // Muestra el lago del paquete
+        String lar = String.format("%20s%10.2f%s", "El Largo es: ", largo, "cm \n");
+        String todo = alt + anc + lar;
+        return todo;
 
     }
 
