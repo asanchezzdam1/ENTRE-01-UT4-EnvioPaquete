@@ -147,7 +147,7 @@ public class Envio
      */
     public String toString() {
 
-        String coste = String.format("%20s%10.2f%10s","Coste total envio: ", 
+        String coste = String.format("%20s%10.2f%10 s","Coste total envio: ", 
                 calcularCosteTotalEnvio(), "€" + "\n");
         String separadorDeTexto = "\n";
         if (getNumeroPaquetes() == 1){
