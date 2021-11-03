@@ -54,11 +54,11 @@ public class Dimension
      */
     public String toString() {
         // Muestra el alto del paquete
-        String alt = String.format("%20s%10.2f%s", "El Alto es: ", alto, "cm \n");
+        String alt = String.format("%20s%10.2f%10s", "El Alto es: ", alto, "cm" +"\n");
         // Muestra el ancho del paquete
-        String anc = String.format("%20s%10.2f%s", "El Ancho es: ", ancho, "cm \n");
+        String anc = String.format("%20s%10.2f%10s", "El Ancho es: ", ancho, "cm" +"\n");
         // Muestra el lago del paquete
-        String lar = String.format("%20s%10.2f%s", "El Largo es: ", largo, "cm \n");
+        String lar = String.format("%20s%10.2f%10s", "El Largo es: ", largo, "cm" +"\n");
         String todo = alt + anc + lar;
         return todo;
 

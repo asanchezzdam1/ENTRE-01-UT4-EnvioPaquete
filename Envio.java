@@ -77,13 +77,7 @@ public class Envio
      * (tiene exactamente 3 paquetes)
      */
     public boolean envioCompleto() {
-        // boolean paquete1 != null && paquete2 != null && paquete3 != null = envio;   
-        // switch(envio){
-            // case true: return true;
-            // default: return false;
-        // }
-        //Probisional el return
-        return false;
+        return  getNumeroPaquetes() == 3;  
     }
 
     /**
