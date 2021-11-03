@@ -30,7 +30,6 @@ public class TestEnvio
         envio.print();
         //Se crea la clonacion del paquete 2 y se añade al envio
         envio.addPaquete(paquete2.obtenerCopia());
-        //se elimina
-        envio.print();
+        
     }
 }
