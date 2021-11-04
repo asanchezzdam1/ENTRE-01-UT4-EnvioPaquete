@@ -55,20 +55,20 @@ public class Envio
      * (dependerá de cuántos paquetes estén a null)
      */
     public int getNumeroPaquetes() {
-        int total = 0;
+        int paquetes = 0;
         // Si el paquete1 no es null añadir al total 
         if (paquete1 != null){
-            total ++;
+            paquetes ++;
         }
         // Si el paquete2 no es null añadir al total
         if (paquete2 != null){
-            total ++;
+            paquetes ++;
         }
         // Si el paquete3 no es null añadir al total
         if (paquete3 != null){
-            total ++;
+            paquetes ++;
         }
-        return total;
+        return paquetes;
 
     }
 
@@ -120,22 +120,22 @@ public class Envio
      */
     public double calcularCosteTotalEnvio() {
         // Se crea esta variable para calcular el peso facturable
-        double aux;
+        double precioPeso;
         //Se calcula el peso de los paquetes llamando al metodo calcularPesoFacturable de la clase paquet
         if (getNumeroPaquetes() == 1){
-            aux = paquete1.calcularPesoFacturable();
+            precioPeso = paquete1.calcularPesoFacturable();
         }
         else if (getNumeroPaquetes() == 2){
-            aux = Math.ceil(paquete1.calcularPesoFacturable() + 
+            precioPeso = Math.ceil(paquete1.calcularPesoFacturable() + 
                 paquete2.calcularPesoFacturable());
         }
         else {
-            aux = Math.ceil(paquete1.calcularPesoFacturable() + 
+            precioPeso = Math.ceil(paquete1.calcularPesoFacturable() + 
                 paquete2.calcularPesoFacturable() + 
                 paquete3.calcularPesoFacturable());
         }
 
-        double costeEnvio = aux * PRECIO_KILO;
+        double costeEnvio = precioPeso * PRECIO_KILO;
 
         return costeEnvio;
     }
