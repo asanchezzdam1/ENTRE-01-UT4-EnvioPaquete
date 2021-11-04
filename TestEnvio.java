@@ -22,8 +22,8 @@ public class TestEnvio
         //muestra el envio
         envio.print();
         //Se crea la dimension del paquete 3
-        Dimension dimension = new Dimension(50,50,70);
-        Paquete paquete3 = new Paquete(dimension,13);
+        Dimension dimentsioa = new Dimension(50,50,70);
+        Paquete paquete3 = new Paquete(dimentsioa,13);
         //Se añade el paquete 3 al envio
         envio.addPaquete(paquete3);
         //Se muestra el envio
