@@ -65,8 +65,8 @@ public class Paquete
      * El volumen = alto x ancho x largo
      */
     public double calcularVolumen() {
-        double calcularVolumen = dimension.getAlto() * dimension.getLargo() * dimension.getAncho();
-        return calcularVolumen;
+        double bolumenaKalkulatu = dimension.getAlto() * dimension.getLargo() * dimension.getAncho();
+        return bolumenaKalkulatu;
     }
 
     /**
@@ -98,8 +98,8 @@ public class Paquete
      * Se obtienen copias también de los objetos que contenga
      */
     public Paquete obtenerCopia() {
-        Paquete clon = new Paquete(dimension, peso);
-        return clon;
+        Paquete kopia = new Paquete(dimension, peso);
+        return kopia;
     }
 
     /**
@@ -109,7 +109,7 @@ public class Paquete
     public String toString() {
         String aux ="";
         aux += String.format("%20s", "Descripcion del paquete: " + "\n");
-         aux += String.format("%20s", "-------------------------" + "\n");
+        aux += String.format("%20s", "-------------------------" + "\n");
         aux += String.format("%20s%10.2f%10s", "El Alto es: ",dimension.getAlto(), "(cm)"+ "\n" );
         aux += String.format("%20s%10.2f%10s", "El Ancho es: ",dimension.getAncho(),"(cm)" + "\n");
         aux += String.format("%20s%10.2f%10s","El Largo es: ",dimension.getLargo(),"(cm)" + "\n");
