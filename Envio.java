@@ -135,9 +135,9 @@ public class Envio
                 paquete3.calcularPesoFacturable());
         }
 
-        double costeEnvio = precioPeso * PRECIO_KILO;
+        double cuantosEuros = precioPeso * PRECIO_KILO;
 
-        return costeEnvio;
+        return cuantosEuros;
     }
 
     /**
